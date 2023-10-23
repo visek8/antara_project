@@ -7,6 +7,7 @@ import argparse
 
 class Event:
     """Создает атрибуты события."""
+
     def init(self, event_name, place, event_type, event_date, member):
         self.event_name = event_name
         self.place = place
@@ -82,6 +83,7 @@ event_6.make_dict()
 
 class File:
     """Создаем json-файл."""
+
     def __init__(self, obj_1, obj_2, obj_3, obj_4, obj_5, obj_6):
         self.obj_1 = obj_1
         self.obj_2 = obj_2
@@ -119,6 +121,7 @@ class Sorted:
 
     def sort_dict(self):
         """Сортируем словари в списке по ключу(по дате)."""
+
         def get_data_for_sort(x):
             return x['date']
 
@@ -130,6 +133,7 @@ class Sorted:
         self.sort_dict()
         with open('sorted.json', 'w') as file:
             json.dump(self.sorted_dicts, file, indent=4)
+
 
 sorted_js = Sorted()
 sorted_js.make_json_again()
