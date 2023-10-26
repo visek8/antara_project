@@ -96,4 +96,7 @@ class BasePage:
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
 
     def scroll(self, locator):
-        self.driver.execute_script("arguments[0].scrollIntoView();", self.driver.find_elements(By.XPATH, locator))
+        self.driver.execute_script("arguments[0].scrollIntoView();", self.get_locator_by_xpath(locator))
+
+    def scroll_to_text(self, text):
+        self.driver.execute_script("arguments[0].scrollIntoView();", self.get_locator_by_contains_text(text))

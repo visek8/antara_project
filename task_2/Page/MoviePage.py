@@ -65,6 +65,21 @@ class MoviePage(BasePage):
     def aot_displayed(self):
         self.assert_that_text_is_displayed(self.AOT)
 
+    def scroll_to_aot(self):
+        self.scroll_to_text(self.AOT)
+
+    def scroll_to_potter(self):
+        self.scroll(self.POSTER_POTTER)
+
+    def scroll_to_oskar(self):
+        self.scroll(self.OSKAR_POSTER)
+
+    def scroll_to_pushkin(self):
+        self.scroll(self.PUSHKIN)
+
+    def scroll_to_svaty(self):
+        self.scroll(self.SVATY_POSTER)
+
     def search_oskar(self):
         self.fill_field(self.MOVIE_NAME, self.OSKAR)
 
