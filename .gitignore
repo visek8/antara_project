@@ -3,3 +3,6 @@ build/
 doc/*.txt
 !lib.a
 .idea
+
+allureres/
+.pytest_cache
