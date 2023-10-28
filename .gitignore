@@ -5,3 +5,4 @@ doc/*.txt
 .idea
 
 allureres/
+.pytest_cache

@@ -1,19 +1,7 @@
 from datetime import datetime
-import functools
-from distutils.command.config import config
-from pathlib import Path
-from typing import Callable
-
 import allure
-import wrapt as wrapt
-from allure import attachment_type
-from slugify import slugify
 import pytest
 from selenium import webdriver
-import sys
-
-from allure_commons.utils import func_parameters, represent
-from allure_commons._allure import StepContext
 
 
 @pytest.fixture
